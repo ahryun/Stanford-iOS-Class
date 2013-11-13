@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TroubleshootManagedDocument.h"
 
 typedef void (^OnDocumentReady) (UIManagedDocument *document);
 
 @interface SharedManagedDocument : NSObject
 
-@property (nonatomic, strong, readonly) UIManagedDocument *sharedDocument;
+@property (nonatomic, strong, readonly) TroubleshootManagedDocument *sharedDocument;
 
 + (SharedManagedDocument *)sharedInstance;
 - (void)performWithDocument:(OnDocumentReady)onDocumentReady;

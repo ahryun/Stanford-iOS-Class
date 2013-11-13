@@ -7,7 +7,6 @@
 //
 
 #import "SharedManagedDocument.h"
-#import "TroubleshootManagedDocument.h"
 
 @interface SharedManagedDocument()
 

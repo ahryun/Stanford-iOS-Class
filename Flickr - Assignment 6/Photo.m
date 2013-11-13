@@ -2,7 +2,7 @@
 //  Photo.m
 //  FlickrCD
 //
-//  Created by Ahryun Moon on 11/7/13.
+//  Created by Ahryun Moon on 11/12/13.
 //  Copyright (c) 2013 Ahryun Moon. All rights reserved.
 //
 
@@ -15,10 +15,12 @@
 @dynamic lastViewed;
 @dynamic photoURL;
 @dynamic subtitle;
-@dynamic title;
-@dynamic uniqueID;
 @dynamic thumbnailData;
 @dynamic thumbnailURL;
+@dynamic title;
+@dynamic uniqueID;
+@dynamic latitude;
+@dynamic longitude;
 @dynamic tags;
 
 @end

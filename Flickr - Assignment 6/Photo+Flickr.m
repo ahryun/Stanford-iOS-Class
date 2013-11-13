@@ -37,6 +37,8 @@
         [photo setPhotoURL:[[FlickrFetcher urlForPhoto:photoDictionary format:FlickrPhotoFormatLarge] absoluteString]];
         [photo setThumbnailURL:[[FlickrFetcher urlForPhoto:photoDictionary format:FlickrPhotoFormatSquare] absoluteString]];
         [photo setUniqueID:[photoDictionary[FLICKR_PHOTO_ID] description]];
+        [photo setLatitude:photoDictionary[FLICKR_LATITUDE]];
+        [photo setLongitude:photoDictionary[FLICKR_LONGITUDE]];
         NSArray *tags = [photoDictionary[FLICKR_TAGS] componentsSeparatedByString:@" "];
         for (NSString *tagName in tags) {
             Tag *tag = [Tag tagWithName:[tagName description] withManagedObjectContext:context];

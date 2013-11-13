@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F30FAF931832D62600902D96 /* Photo+MKAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAF921832D62600902D96 /* Photo+MKAnnotation.m */; };
+		F30FAF961832EC5600902D96 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAF951832EC5600902D96 /* MapViewController.m */; };
 		F39A66EB182C5BF90025CF70 /* ManagedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F39A66EA182C5BF90025CF70 /* ManagedDocument.m */; };
 		F39A66F5182C65290025CF70 /* Photo+LoadDataIntoCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = F39A66F4182C65290025CF70 /* Photo+LoadDataIntoCoreData.m */; };
 		F39A6725182D7AE80025CF70 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39A6724182D7AE80025CF70 /* Storyboard.storyboard */; };
@@ -54,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F30FAF911832D62600902D96 /* Photo+MKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Photo+MKAnnotation.h"; path = "Code Compilation/Photo+MKAnnotation.h"; sourceTree = "<group>"; };
+		F30FAF921832D62600902D96 /* Photo+MKAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Photo+MKAnnotation.m"; path = "Code Compilation/Photo+MKAnnotation.m"; sourceTree = "<group>"; };
+		F30FAF941832EC5600902D96 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = "Code Compilation/MapViewController.h"; sourceTree = "<group>"; };
+		F30FAF951832EC5600902D96 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = "Code Compilation/MapViewController.m"; sourceTree = "<group>"; };
 		F39A66E9182C5BF90025CF70 /* ManagedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManagedDocument.h; path = "Code Compilation/ManagedDocument.h"; sourceTree = "<group>"; };
 		F39A66EA182C5BF90025CF70 /* ManagedDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManagedDocument.m; path = "Code Compilation/ManagedDocument.m"; sourceTree = "<group>"; };
 		F39A66F3182C65290025CF70 /* Photo+LoadDataIntoCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Photo+LoadDataIntoCoreData.h"; path = "Code Compilation/Photo+LoadDataIntoCoreData.h"; sourceTree = "<group>"; };
@@ -138,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				F3D6A052183186360069B86D /* Troubleshooting.h */,
+				F30FAF911832D62600902D96 /* Photo+MKAnnotation.h */,
+				F30FAF921832D62600902D96 /* Photo+MKAnnotation.m */,
 				F3D6A053183186360069B86D /* Troubleshooting.m */,
 				F3D6A0451830D2B60069B86D /* JCDCoreData-master */,
 				F3FB8AFB182C295000D6C589 /* Code_Compilation.xcdatamodeld */,
@@ -186,6 +194,8 @@
 		F3FB8ADB182C295000D6C589 = {
 			isa = PBXGroup;
 			children = (
+				F30FAF941832EC5600902D96 /* MapViewController.h */,
+				F30FAF951832EC5600902D96 /* MapViewController.m */,
 				F3D6A02F182DDBBE0069B86D /* File System */,
 				F39A6724182D7AE80025CF70 /* Storyboard.storyboard */,
 				F39A6729182D7BFB0025CF70 /* Image Scroll View */,
@@ -387,10 +397,12 @@
 				F3D6A02E182DDBB60069B86D /* SaveToFileSystem.m in Sources */,
 				F3D6A054183186360069B86D /* Troubleshooting.m in Sources */,
 				F39A672C182D83DB0025CF70 /* Photo.m in Sources */,
+				F30FAF961832EC5600902D96 /* MapViewController.m in Sources */,
 				F39A672F182DA4840025CF70 /* Orientation Change.m in Sources */,
 				F3FB8B31182C560900D6C589 /* ManagedObjectContext.m in Sources */,
 				F39A66EB182C5BF90025CF70 /* ManagedDocument.m in Sources */,
 				F3D6A04C1830D2B60069B86D /* JCDCoreData.m in Sources */,
+				F30FAF931832D62600902D96 /* Photo+MKAnnotation.m in Sources */,
 				F39A6728182D7BF50025CF70 /* ImageDisplay.m in Sources */,
 				F3FB8B2B182C2ECA00D6C589 /* Delegate.m in Sources */,
 				F3FB8AFA182C295000D6C589 /* CCAppDelegate.m in Sources */,

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>82441516-E937-4128-BB79-3F5DA0C768BE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Code Compilation</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2B3C4DF7-7BBB-49CA-AB7C-E0D1E516212D</key>
+		<string>ssh://github.com/ahryun/Stanford-iOS-Class.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Code Compilation/Code Compilation/Code Compilation.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2B3C4DF7-7BBB-49CA-AB7C-E0D1E516212D</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/ahryun/Stanford-iOS-Class.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2B3C4DF7-7BBB-49CA-AB7C-E0D1E516212D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2B3C4DF7-7BBB-49CA-AB7C-E0D1E516212D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>StanfordiOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
