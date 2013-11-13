@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="3306" y="216"/>
         </scene>
-        <!--View Controller-->
+        <!--ImageVC-->
         <scene sceneID="gQn-RJ-bVu">
             <objects>
-                <viewController id="yCg-vh-b0f" sceneMemberID="viewController">
+                <viewController id="yCg-vh-b0f" customClass="ImageVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iRf-1C-3wa"/>
                         <viewControllerLayoutGuide type="bottom" id="qzG-Dt-eS7"/>
@@ -78,10 +78,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="m2h-g8-NTX">
+                                <rect key="frame" x="374" y="502" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="zc2-lz-UwN"/>
+                    <connections>
+                        <outlet property="imageScrollView" destination="HBF-ee-ieC" id="WW3-i6-XoK"/>
+                        <outlet property="spinner" destination="m2h-g8-NTX" id="GtS-2p-hV6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2i-oQ-QTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

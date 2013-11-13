@@ -12,5 +12,6 @@
 @interface MapViewController : UIViewController <MKMapViewDelegate>
 
 @property (nonatomic) IBOutlet MKMapView *mapView;
+- (void)updateRegion;
 
 @end

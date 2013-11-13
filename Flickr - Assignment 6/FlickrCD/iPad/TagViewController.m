@@ -29,6 +29,7 @@
     NSArray *tags = [self.context executeFetchRequest:request error:nil];
     [self.mapView removeAnnotations:self.mapView.annotations];
     [self.mapView addAnnotations:tags];
+    [self updateRegion];
 }
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control

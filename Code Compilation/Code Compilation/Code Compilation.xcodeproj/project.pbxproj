@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F30FAF931832D62600902D96 /* Photo+MKAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAF921832D62600902D96 /* Photo+MKAnnotation.m */; };
 		F30FAF961832EC5600902D96 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAF951832EC5600902D96 /* MapViewController.m */; };
+		F30FAF99183314F300902D96 /* MapViewController ZoomIn.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAF98183314F300902D96 /* MapViewController ZoomIn.m */; };
 		F39A66EB182C5BF90025CF70 /* ManagedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F39A66EA182C5BF90025CF70 /* ManagedDocument.m */; };
 		F39A66F5182C65290025CF70 /* Photo+LoadDataIntoCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = F39A66F4182C65290025CF70 /* Photo+LoadDataIntoCoreData.m */; };
 		F39A6725182D7AE80025CF70 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39A6724182D7AE80025CF70 /* Storyboard.storyboard */; };
@@ -60,6 +61,8 @@
 		F30FAF921832D62600902D96 /* Photo+MKAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Photo+MKAnnotation.m"; path = "Code Compilation/Photo+MKAnnotation.m"; sourceTree = "<group>"; };
 		F30FAF941832EC5600902D96 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = "Code Compilation/MapViewController.h"; sourceTree = "<group>"; };
 		F30FAF951832EC5600902D96 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = "Code Compilation/MapViewController.m"; sourceTree = "<group>"; };
+		F30FAF97183314F300902D96 /* MapViewController ZoomIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MapViewController ZoomIn.h"; path = "Code Compilation/MapViewController ZoomIn.h"; sourceTree = "<group>"; };
+		F30FAF98183314F300902D96 /* MapViewController ZoomIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MapViewController ZoomIn.m"; path = "Code Compilation/MapViewController ZoomIn.m"; sourceTree = "<group>"; };
 		F39A66E9182C5BF90025CF70 /* ManagedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManagedDocument.h; path = "Code Compilation/ManagedDocument.h"; sourceTree = "<group>"; };
 		F39A66EA182C5BF90025CF70 /* ManagedDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManagedDocument.m; path = "Code Compilation/ManagedDocument.m"; sourceTree = "<group>"; };
 		F39A66F3182C65290025CF70 /* Photo+LoadDataIntoCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Photo+LoadDataIntoCoreData.h"; path = "Code Compilation/Photo+LoadDataIntoCoreData.h"; sourceTree = "<group>"; };
@@ -140,6 +143,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F30FAF9A1833153E00902D96 /* Map View */ = {
+			isa = PBXGroup;
+			children = (
+				F30FAF941832EC5600902D96 /* MapViewController.h */,
+				F30FAF951832EC5600902D96 /* MapViewController.m */,
+				F30FAF97183314F300902D96 /* MapViewController ZoomIn.h */,
+				F30FAF98183314F300902D96 /* MapViewController ZoomIn.m */,
+			);
+			name = "Map View";
+			sourceTree = "<group>";
+		};
 		F39A66EF182C61D00025CF70 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,8 +208,7 @@
 		F3FB8ADB182C295000D6C589 = {
 			isa = PBXGroup;
 			children = (
-				F30FAF941832EC5600902D96 /* MapViewController.h */,
-				F30FAF951832EC5600902D96 /* MapViewController.m */,
+				F30FAF9A1833153E00902D96 /* Map View */,
 				F3D6A02F182DDBBE0069B86D /* File System */,
 				F39A6724182D7AE80025CF70 /* Storyboard.storyboard */,
 				F39A6729182D7BFB0025CF70 /* Image Scroll View */,
@@ -401,6 +414,7 @@
 				F39A672F182DA4840025CF70 /* Orientation Change.m in Sources */,
 				F3FB8B31182C560900D6C589 /* ManagedObjectContext.m in Sources */,
 				F39A66EB182C5BF90025CF70 /* ManagedDocument.m in Sources */,
+				F30FAF99183314F300902D96 /* MapViewController ZoomIn.m in Sources */,
 				F3D6A04C1830D2B60069B86D /* JCDCoreData.m in Sources */,
 				F30FAF931832D62600902D96 /* Photo+MKAnnotation.m in Sources */,
 				F39A6728182D7BF50025CF70 /* ImageDisplay.m in Sources */,
