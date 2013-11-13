@@ -7,13 +7,15 @@
 //
 
 #import "ImageVC.h"
+#import "MapViewController.h"
+#import "Photo+MKAnnotation.h"
 
 @interface ImageVC ()
 
 @property (weak, nonatomic) IBOutlet UIScrollView *imageScrollView;
 @property (strong, nonatomic) UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
-
+@property (strong, nonatomic) MapViewController *mapViewController;
 
 @end
 
@@ -40,6 +42,11 @@
     self.imageScrollView.minimumZoomScale = 0.2;
     self.imageScrollView.maximumZoomScale = 2.0;
     self.imageScrollView.delegate = self;
+    if (self.mapViewController) {
+        NSLog(@"The Photo I'm seeing is %@", self.mapViewController);
+        [self.mapViewController.mapView removeAnnotations:self.mapViewController.mapView.annotations];
+        [self.mapViewController.mapView addAnnotation:self.photo];
+    }
 }
 
 - (void)resetImage
@@ -93,6 +100,17 @@
 {
     // imageView is an UIImageView
     return self.imageView;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Embedded Map"]) {
+        if ([segue.destinationViewController isKindOfClass:[MapViewController class]]) {
+            self.mapViewController = segue.destinationViewController;
+        }
+        
+    }
+    
 }
 
 @end

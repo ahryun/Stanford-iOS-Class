@@ -82,8 +82,24 @@
                                 <rect key="frame" x="374" y="502" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
+                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54p-MT-R4Y">
+                                <rect key="frame" x="488" y="84" width="260" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="BeH-9Z-vgl"/>
+                                    <constraint firstAttribute="width" constant="260" id="FQ1-T9-HkC"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="NC8-a0-LEs" kind="embed" identifier="Embedded Map" id="cFA-YO-nbo"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="54p-MT-R4Y" firstAttribute="top" secondItem="iRf-1C-3wa" secondAttribute="bottom" constant="20" id="dvT-8T-gfx"/>
+                            <constraint firstAttribute="trailing" secondItem="54p-MT-R4Y" secondAttribute="trailing" constant="20" symbolic="YES" id="gR2-ZI-9Yy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zc2-lz-UwN"/>
                     <connections>
@@ -93,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2i-oQ-QTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4218" y="216"/>
+            <point key="canvasLocation" x="4278" y="240"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NX6-cV-wXL">
@@ -112,6 +128,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wpH-3G-wqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1396" y="228"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="bUZ-B5-74w">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="NC8-a0-LEs" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4x5-aW-Pnl"/>
+                        <viewControllerLayoutGuide type="bottom" id="THb-co-87g"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nfK-ja-CHq">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WRJ-1R-FBb">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="mapView" destination="WRJ-1R-FBb" id="PKp-oD-mMs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LdK-Za-4Dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5224" y="320"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
