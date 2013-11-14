@@ -10,6 +10,10 @@
 		F30FAF931832D62600902D96 /* Photo+MKAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAF921832D62600902D96 /* Photo+MKAnnotation.m */; };
 		F30FAF961832EC5600902D96 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAF951832EC5600902D96 /* MapViewController.m */; };
 		F30FAF99183314F300902D96 /* MapViewController ZoomIn.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAF98183314F300902D96 /* MapViewController ZoomIn.m */; };
+		F30FAFE8183449D000902D96 /* CGAffineTransformController.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAFE7183449D000902D96 /* CGAffineTransformController.m */; };
+		F30FAFEC18345A2E00902D96 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAFEB18345A2E00902D96 /* Timer.m */; };
+		F30FAFF0183466F200902D96 /* ActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAFEF183466F200902D96 /* ActionSheet.m */; };
+		F30FAFF5183564E100902D96 /* ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAFF4183564E100902D96 /* ImagePicker.m */; };
 		F39A66EB182C5BF90025CF70 /* ManagedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F39A66EA182C5BF90025CF70 /* ManagedDocument.m */; };
 		F39A66F5182C65290025CF70 /* Photo+LoadDataIntoCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = F39A66F4182C65290025CF70 /* Photo+LoadDataIntoCoreData.m */; };
 		F39A6725182D7AE80025CF70 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39A6724182D7AE80025CF70 /* Storyboard.storyboard */; };
@@ -63,6 +67,14 @@
 		F30FAF951832EC5600902D96 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = "Code Compilation/MapViewController.m"; sourceTree = "<group>"; };
 		F30FAF97183314F300902D96 /* MapViewController ZoomIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MapViewController ZoomIn.h"; path = "Code Compilation/MapViewController ZoomIn.h"; sourceTree = "<group>"; };
 		F30FAF98183314F300902D96 /* MapViewController ZoomIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MapViewController ZoomIn.m"; path = "Code Compilation/MapViewController ZoomIn.m"; sourceTree = "<group>"; };
+		F30FAFE6183449D000902D96 /* CGAffineTransformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGAffineTransformController.h; path = "Code Compilation/CGAffineTransformController.h"; sourceTree = "<group>"; };
+		F30FAFE7183449D000902D96 /* CGAffineTransformController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGAffineTransformController.m; path = "Code Compilation/CGAffineTransformController.m"; sourceTree = "<group>"; };
+		F30FAFEA18345A2E00902D96 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = "Code Compilation/Timer.h"; sourceTree = "<group>"; };
+		F30FAFEB18345A2E00902D96 /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Timer.m; path = "Code Compilation/Timer.m"; sourceTree = "<group>"; };
+		F30FAFEE183466F200902D96 /* ActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheet.h; path = "Code Compilation/ActionSheet.h"; sourceTree = "<group>"; };
+		F30FAFEF183466F200902D96 /* ActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheet.m; path = "Code Compilation/ActionSheet.m"; sourceTree = "<group>"; };
+		F30FAFF3183564E100902D96 /* ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImagePicker.h; path = "Code Compilation/ImagePicker.h"; sourceTree = "<group>"; };
+		F30FAFF4183564E100902D96 /* ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImagePicker.m; path = "Code Compilation/ImagePicker.m"; sourceTree = "<group>"; };
 		F39A66E9182C5BF90025CF70 /* ManagedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManagedDocument.h; path = "Code Compilation/ManagedDocument.h"; sourceTree = "<group>"; };
 		F39A66EA182C5BF90025CF70 /* ManagedDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManagedDocument.m; path = "Code Compilation/ManagedDocument.m"; sourceTree = "<group>"; };
 		F39A66F3182C65290025CF70 /* Photo+LoadDataIntoCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Photo+LoadDataIntoCoreData.h"; path = "Code Compilation/Photo+LoadDataIntoCoreData.h"; sourceTree = "<group>"; };
@@ -154,6 +166,28 @@
 			name = "Map View";
 			sourceTree = "<group>";
 		};
+		F30FAFE918344E5E00902D96 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				F30FAFE6183449D000902D96 /* CGAffineTransformController.h */,
+				F30FAFE7183449D000902D96 /* CGAffineTransformController.m */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
+		F30FAFED18345A7B00902D96 /* Misc. */ = {
+			isa = PBXGroup;
+			children = (
+				F30FAFEA18345A2E00902D96 /* Timer.h */,
+				F30FAFEB18345A2E00902D96 /* Timer.m */,
+				F30FAFEE183466F200902D96 /* ActionSheet.h */,
+				F30FAFEF183466F200902D96 /* ActionSheet.m */,
+				F30FAFF3183564E100902D96 /* ImagePicker.h */,
+				F30FAFF4183564E100902D96 /* ImagePicker.m */,
+			);
+			name = Misc.;
+			sourceTree = "<group>";
+		};
 		F39A66EF182C61D00025CF70 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,12 +242,14 @@
 		F3FB8ADB182C295000D6C589 = {
 			isa = PBXGroup;
 			children = (
+				F30FAFE918344E5E00902D96 /* Animation */,
 				F30FAF9A1833153E00902D96 /* Map View */,
 				F3D6A02F182DDBBE0069B86D /* File System */,
 				F39A6724182D7AE80025CF70 /* Storyboard.storyboard */,
 				F39A6729182D7BFB0025CF70 /* Image Scroll View */,
 				F3FB8B1F182C29A800D6C589 /* Table View */,
 				F39A66EF182C61D00025CF70 /* Core Data */,
+				F30FAFED18345A7B00902D96 /* Misc. */,
 				F3FB8AEF182C295000D6C589 /* Code Compilation */,
 				F3FB8B0C182C295100D6C589 /* Code CompilationTests */,
 				F3FB8AE6182C295000D6C589 /* Frameworks */,
@@ -408,6 +444,8 @@
 				F3FB8B25182C2C1000D6C589 /* DataSource.m in Sources */,
 				F39A66F5182C65290025CF70 /* Photo+LoadDataIntoCoreData.m in Sources */,
 				F3D6A02E182DDBB60069B86D /* SaveToFileSystem.m in Sources */,
+				F30FAFF5183564E100902D96 /* ImagePicker.m in Sources */,
+				F30FAFEC18345A2E00902D96 /* Timer.m in Sources */,
 				F3D6A054183186360069B86D /* Troubleshooting.m in Sources */,
 				F39A672C182D83DB0025CF70 /* Photo.m in Sources */,
 				F30FAF961832EC5600902D96 /* MapViewController.m in Sources */,
@@ -417,9 +455,11 @@
 				F30FAF99183314F300902D96 /* MapViewController ZoomIn.m in Sources */,
 				F3D6A04C1830D2B60069B86D /* JCDCoreData.m in Sources */,
 				F30FAF931832D62600902D96 /* Photo+MKAnnotation.m in Sources */,
+				F30FAFF0183466F200902D96 /* ActionSheet.m in Sources */,
 				F39A6728182D7BF50025CF70 /* ImageDisplay.m in Sources */,
 				F3FB8B2B182C2ECA00D6C589 /* Delegate.m in Sources */,
 				F3FB8AFA182C295000D6C589 /* CCAppDelegate.m in Sources */,
+				F30FAFE8183449D000902D96 /* CGAffineTransformController.m in Sources */,
 				F39A6732182DA5AD0025CF70 /* zoomInScroll.m in Sources */,
 				F3FB8B28182C2CD700D6C589 /* FetchDataFromCoreData.m in Sources */,
 				F3FB8AF6182C295000D6C589 /* main.m in Sources */,

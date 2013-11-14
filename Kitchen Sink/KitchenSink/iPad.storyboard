@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="oIE-E0-W3C">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Kitchen View Controller-->
+        <scene sceneID="ZWI-Sb-4i8">
+            <objects>
+                <viewController id="oIE-E0-W3C" customClass="KitchenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kOP-Hv-4Jg"/>
+                        <viewControllerLayoutGuide type="bottom" id="uVo-on-KEW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4sh-ZQ-tqH">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6W2-6d-4DS">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Add Food" id="pII-If-vjM">
+                                        <connections>
+                                            <segue destination="WLZ-BP-XnD" kind="modal" identifier="Ask Question" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="gEP-Wp-hUh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bmV-tE-JZI"/>
+                                    <barButtonItem title="Add Food Photo" id="8jl-VA-GRO">
+                                        <connections>
+                                            <action selector="addFoodPhoto:" destination="oIE-E0-W3C" id="f13-pt-ATW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Take Food Photo" id="ml9-P3-R78">
+                                        <connections>
+                                            <action selector="takeFoodPhoto:" destination="oIE-E0-W3C" id="Nsc-b2-MaQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Control Sink" id="QOf-6E-QgP">
+                                        <connections>
+                                            <action selector="controlSink:" destination="oIE-E0-W3C" id="9cf-LK-yPo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JGY-at-Qzg">
+                                <rect key="frame" x="0.0" y="44" width="768" height="980"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HtU-Zw-gUm" appends="YES" id="9aK-5y-CeQ"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="kitchenSink" destination="JGY-at-Qzg" id="gMC-IN-MXP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p6f-7S-het" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="HtU-Zw-gUm">
+                    <connections>
+                        <action selector="tap:" destination="oIE-E0-W3C" id="I95-AX-T6k"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-119" y="-152"/>
+        </scene>
+        <!--Asker View Controller-->
+        <scene sceneID="CpS-mN-whc">
+            <objects>
+                <viewController id="WLZ-BP-XnD" customClass="AskerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MQv-Df-Z88"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ecz-fF-BqG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tU3-Bl-Hv4">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TYPE FOOD YOU LIKE!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pk4-UL-n68">
+                                <rect key="frame" x="0.0" y="135" width="768" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oYh-cR-aq2">
+                                <rect key="frame" x="20" y="589" width="728" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2F-lY-Vc5">
+                                <rect key="frame" x="25" y="627" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WGS-A8-vZ7" kind="unwind" unwindAction="cancelAsking:" id="2Mh-WB-iJL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIT-Cw-5JD">
+                                <rect key="frame" x="707" y="627" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WGS-A8-vZ7" kind="unwind" unwindAction="doneAsking:" id="Fj2-nc-YL0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerText" destination="oYh-cR-aq2" id="FEM-Ag-co4"/>
+                        <outlet property="questionLabel" destination="Pk4-UL-n68" id="TSN-SZ-url"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dua-Oz-Fxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="WGS-A8-vZ7" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="-152"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="lightContent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
