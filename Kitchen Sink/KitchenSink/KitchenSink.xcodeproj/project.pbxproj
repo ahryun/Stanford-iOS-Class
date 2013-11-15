@@ -23,6 +23,8 @@
 		F30FAFDE1834018900902D96 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30FAFDD1834018900902D96 /* iPad.storyboard */; };
 		F30FAFE1183402FD00902D96 /* AskerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAFE0183402FD00902D96 /* AskerViewController.m */; };
 		F30FAFF2183558AC00902D96 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30FAFF1183558AC00902D96 /* MobileCoreServices.framework */; };
+		F30FAFF71835913000902D96 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30FAFF61835913000902D96 /* CoreMotion.framework */; };
+		F30FAFFD1835949000902D96 /* CMMotionManager+SharedInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAFFC1835949000902D96 /* CMMotionManager+SharedInstance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		F30FAFDF183402FD00902D96 /* AskerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskerViewController.h; sourceTree = "<group>"; };
 		F30FAFE0183402FD00902D96 /* AskerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskerViewController.m; sourceTree = "<group>"; };
 		F30FAFF1183558AC00902D96 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F30FAFF61835913000902D96 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		F30FAFFB1835949000902D96 /* CMMotionManager+SharedInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CMMotionManager+SharedInstance.h"; path = "KitchenSink/CMMotionManager+SharedInstance.h"; sourceTree = "<group>"; };
+		F30FAFFC1835949000902D96 /* CMMotionManager+SharedInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CMMotionManager+SharedInstance.m"; path = "KitchenSink/CMMotionManager+SharedInstance.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30FAFF71835913000902D96 /* CoreMotion.framework in Frameworks */,
 				F30FAFF2183558AC00902D96 /* MobileCoreServices.framework in Frameworks */,
 				F30FAFAA183400EF00902D96 /* CoreGraphics.framework in Frameworks */,
 				F30FAFAC183400EF00902D96 /* UIKit.framework in Frameworks */,
@@ -88,6 +94,8 @@
 		F30FAF9B183400EF00902D96 = {
 			isa = PBXGroup;
 			children = (
+				F30FAFFB1835949000902D96 /* CMMotionManager+SharedInstance.h */,
+				F30FAFFC1835949000902D96 /* CMMotionManager+SharedInstance.m */,
 				F30FAFAD183400EF00902D96 /* KitchenSink */,
 				F30FAFCC183400EF00902D96 /* KitchenSinkTests */,
 				F30FAFA6183400EF00902D96 /* Frameworks */,
@@ -107,6 +115,7 @@
 		F30FAFA6183400EF00902D96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F30FAFF61835913000902D96 /* CoreMotion.framework */,
 				F30FAFF1183558AC00902D96 /* MobileCoreServices.framework */,
 				F30FAFA7183400EF00902D96 /* Foundation.framework */,
 				F30FAFA9183400EF00902D96 /* CoreGraphics.framework */,
@@ -268,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F30FAFBE183400EF00902D96 /* KitchenViewController.m in Sources */,
+				F30FAFFD1835949000902D96 /* CMMotionManager+SharedInstance.m in Sources */,
 				F30FAFE1183402FD00902D96 /* AskerViewController.m in Sources */,
 				F30FAFB4183400EF00902D96 /* main.m in Sources */,
 				F30FAFB8183400EF00902D96 /* KitchenAppDelegate.m in Sources */,

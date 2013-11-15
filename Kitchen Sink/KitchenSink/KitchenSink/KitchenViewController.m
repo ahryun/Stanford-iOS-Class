@@ -9,6 +9,7 @@
 #import "KitchenViewController.h"
 #import "AskerViewController.h"
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "CMMotionManager+SharedInstance.h"
 
 @interface KitchenViewController ()
 
@@ -149,12 +150,42 @@
 {
     [super viewDidAppear:animated];
     [self startDrainTimer];
+    [self startDrift];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     [self stopDrainTimer];
+    [self stopDrift];
+}
+
+#pragma mark - Drift
+
+#define DRIFT_HERTZ 10
+#define DRIFT_RATE 10
+- (void)startDrift
+{
+    CMMotionManager *sharedManager = [CMMotionManager shareMotionManager];
+    if ([sharedManager isAccelerometerAvailable]) {
+        [sharedManager setAccelerometerUpdateInterval:DRIFT_HERTZ];
+        [sharedManager startAccelerometerUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMAccelerometerData *data, NSError *error) {
+            for (UIView *view in self.kitchenSink.subviews) {
+                CGPoint center = view.center;
+                center.x += data.acceleration.x * DRIFT_RATE;
+                center.y -= data.acceleration.y * DRIFT_RATE;
+                view.center = center;
+                if (!CGRectContainsRect(self.kitchenSink.bounds, view.frame) && !CGRectIntersectsRect(self.kitchenSink.bounds, view.frame)) {
+                    [view removeFromSuperview];
+                }
+            }
+        }];
+    }
+}
+
+- (void)stopDrift
+{
+    [[CMMotionManager shareMotionManager] stopAccelerometerUpdates];
 }
 
 #define DISHCLEAN_INTERVAL 2.0

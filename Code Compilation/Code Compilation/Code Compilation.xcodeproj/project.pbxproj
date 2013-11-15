@@ -14,6 +14,8 @@
 		F30FAFEC18345A2E00902D96 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAFEB18345A2E00902D96 /* Timer.m */; };
 		F30FAFF0183466F200902D96 /* ActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAFEF183466F200902D96 /* ActionSheet.m */; };
 		F30FAFF5183564E100902D96 /* ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAFF4183564E100902D96 /* ImagePicker.m */; };
+		F30FB0001835999200902D96 /* Accelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAFFF1835999200902D96 /* Accelerometer.m */; };
+		F30FB003183599CB00902D96 /* CMMotionManager+SharedInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FB002183599CB00902D96 /* CMMotionManager+SharedInstance.m */; };
 		F39A66EB182C5BF90025CF70 /* ManagedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F39A66EA182C5BF90025CF70 /* ManagedDocument.m */; };
 		F39A66F5182C65290025CF70 /* Photo+LoadDataIntoCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = F39A66F4182C65290025CF70 /* Photo+LoadDataIntoCoreData.m */; };
 		F39A6725182D7AE80025CF70 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39A6724182D7AE80025CF70 /* Storyboard.storyboard */; };
@@ -75,6 +77,10 @@
 		F30FAFEF183466F200902D96 /* ActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheet.m; path = "Code Compilation/ActionSheet.m"; sourceTree = "<group>"; };
 		F30FAFF3183564E100902D96 /* ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImagePicker.h; path = "Code Compilation/ImagePicker.h"; sourceTree = "<group>"; };
 		F30FAFF4183564E100902D96 /* ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImagePicker.m; path = "Code Compilation/ImagePicker.m"; sourceTree = "<group>"; };
+		F30FAFFE1835999200902D96 /* Accelerometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Accelerometer.h; path = "Code Compilation/Accelerometer.h"; sourceTree = "<group>"; };
+		F30FAFFF1835999200902D96 /* Accelerometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Accelerometer.m; path = "Code Compilation/Accelerometer.m"; sourceTree = "<group>"; };
+		F30FB001183599CB00902D96 /* CMMotionManager+SharedInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMMotionManager+SharedInstance.h"; sourceTree = "<group>"; };
+		F30FB002183599CB00902D96 /* CMMotionManager+SharedInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMMotionManager+SharedInstance.m"; sourceTree = "<group>"; };
 		F39A66E9182C5BF90025CF70 /* ManagedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManagedDocument.h; path = "Code Compilation/ManagedDocument.h"; sourceTree = "<group>"; };
 		F39A66EA182C5BF90025CF70 /* ManagedDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManagedDocument.m; path = "Code Compilation/ManagedDocument.m"; sourceTree = "<group>"; };
 		F39A66F3182C65290025CF70 /* Photo+LoadDataIntoCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Photo+LoadDataIntoCoreData.h"; path = "Code Compilation/Photo+LoadDataIntoCoreData.h"; sourceTree = "<group>"; };
@@ -184,6 +190,10 @@
 				F30FAFEF183466F200902D96 /* ActionSheet.m */,
 				F30FAFF3183564E100902D96 /* ImagePicker.h */,
 				F30FAFF4183564E100902D96 /* ImagePicker.m */,
+				F30FB001183599CB00902D96 /* CMMotionManager+SharedInstance.h */,
+				F30FB002183599CB00902D96 /* CMMotionManager+SharedInstance.m */,
+				F30FAFFE1835999200902D96 /* Accelerometer.h */,
+				F30FAFFF1835999200902D96 /* Accelerometer.m */,
 			);
 			name = Misc.;
 			sourceTree = "<group>";
@@ -444,6 +454,7 @@
 				F3FB8B25182C2C1000D6C589 /* DataSource.m in Sources */,
 				F39A66F5182C65290025CF70 /* Photo+LoadDataIntoCoreData.m in Sources */,
 				F3D6A02E182DDBB60069B86D /* SaveToFileSystem.m in Sources */,
+				F30FB003183599CB00902D96 /* CMMotionManager+SharedInstance.m in Sources */,
 				F30FAFF5183564E100902D96 /* ImagePicker.m in Sources */,
 				F30FAFEC18345A2E00902D96 /* Timer.m in Sources */,
 				F3D6A054183186360069B86D /* Troubleshooting.m in Sources */,
@@ -454,6 +465,7 @@
 				F39A66EB182C5BF90025CF70 /* ManagedDocument.m in Sources */,
 				F30FAF99183314F300902D96 /* MapViewController ZoomIn.m in Sources */,
 				F3D6A04C1830D2B60069B86D /* JCDCoreData.m in Sources */,
+				F30FB0001835999200902D96 /* Accelerometer.m in Sources */,
 				F30FAF931832D62600902D96 /* Photo+MKAnnotation.m in Sources */,
 				F30FAFF0183466F200902D96 /* ActionSheet.m in Sources */,
 				F39A6728182D7BF50025CF70 /* ImageDisplay.m in Sources */,
