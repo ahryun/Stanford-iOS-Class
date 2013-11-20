@@ -25,6 +25,7 @@
 		F30FAFF2183558AC00902D96 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30FAFF1183558AC00902D96 /* MobileCoreServices.framework */; };
 		F30FAFF71835913000902D96 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30FAFF61835913000902D96 /* CoreMotion.framework */; };
 		F30FAFFD1835949000902D96 /* CMMotionManager+SharedInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = F30FAFFC1835949000902D96 /* CMMotionManager+SharedInstance.m */; };
+		F30FB0051836FD6200902D96 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30FB0041836FD6200902D96 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		F30FAFF61835913000902D96 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		F30FAFFB1835949000902D96 /* CMMotionManager+SharedInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CMMotionManager+SharedInstance.h"; path = "KitchenSink/CMMotionManager+SharedInstance.h"; sourceTree = "<group>"; };
 		F30FAFFC1835949000902D96 /* CMMotionManager+SharedInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CMMotionManager+SharedInstance.m"; path = "KitchenSink/CMMotionManager+SharedInstance.m"; sourceTree = "<group>"; };
+		F30FB0041836FD6200902D96 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../Downloads/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30FB0051836FD6200902D96 /* opencv2.framework in Frameworks */,
 				F30FAFF71835913000902D96 /* CoreMotion.framework in Frameworks */,
 				F30FAFF2183558AC00902D96 /* MobileCoreServices.framework in Frameworks */,
 				F30FAFAA183400EF00902D96 /* CoreGraphics.framework in Frameworks */,
@@ -115,6 +118,7 @@
 		F30FAFA6183400EF00902D96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F30FB0041836FD6200902D96 /* opencv2.framework */,
 				F30FAFF61835913000902D96 /* CoreMotion.framework */,
 				F30FAFF1183558AC00902D96 /* MobileCoreServices.framework */,
 				F30FAFA7183400EF00902D96 /* Foundation.framework */,
@@ -399,6 +403,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ahryun/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
 				INFOPLIST_FILE = "KitchenSink/KitchenSink-Info.plist";
@@ -414,6 +422,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ahryun/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
 				INFOPLIST_FILE = "KitchenSink/KitchenSink-Info.plist";
